@@ -2,12 +2,9 @@ name: Build unsigned iOS IPA
 
 on:
   push:
-    branches:
-      - main
-      - master
-    tags:
-      - "v*"
+    branches: [ main, master ]
   pull_request:
+    branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -15,8 +12,8 @@ permissions:
 
 jobs:
   build:
-    name: Build Flutter iOS app and keyboard
     runs-on: macos-latest
+
     steps:
       - name: Check out source
         uses: actions/checkout@v4
@@ -24,7 +21,7 @@ jobs:
       - name: Set up Flutter
         uses: subosito/flutter-action@v2
         with:
-          channel: stable
+          channel: 'stable'
           cache: true
 
       - name: Install Flutter dependencies
@@ -33,27 +30,26 @@ jobs:
       - name: Run Flutter tests
         run: flutter test
 
-      - name: Build iOS app without code signing
-        run: flutter build ios --release --no-codesign
+      - name: Build iOS app with CocoaPods
+        run: |
+          cd ios
+          pod install
+          xcodebuild -workspace Runner.xcworkspace \
+                     -scheme Runner \
+                     -configuration Release \
+                     -sdk iphoneos \
+                     CODE_SIGNING_ALLOWED=NO \
+                     CODE_SIGNING_REQUIRED=NO \
+                     clean build
 
       - name: Package app as IPA
         run: |
-          mkdir -p staging/Payload
-          cp -R build/ios/iphoneos/Runner.app staging/Payload/Runner.app
-          cd staging
-          zip -r ../keyboard.ipa Payload
+          mkdir -p Payload
+          cp -r ios/build/Release-iphoneos/Runner.app Payload/
+          zip -r keyboard.ipa Payload
 
       - name: Upload unsigned IPA artifact
         uses: actions/upload-artifact@v4
         with:
           name: keyboard-unsigned-ipa
           path: keyboard.ipa
-          if-no-files-found: error
-          retention-days: 14
-
-      - name: Publish tagged GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v')
-        uses: softprops/action-gh-release@v2
-        with:
-          generate_release_notes: true
-          files: keyboard.ipa
