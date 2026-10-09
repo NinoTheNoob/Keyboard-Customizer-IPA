@@ -18,29 +18,17 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
-      - name: Set up Flutter
-        uses: subosito/flutter-action@v2
-        with:
-          channel: 'stable'
-          cache: true
+      - name: Select Xcode Version
+        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
-      - name: Install Flutter dependencies
-        run: flutter pub get
-
-      - name: Run Flutter tests
-        run: flutter test
-
-      - name: Build Flutter iOS Assets
-        run: flutter build ios --config-only --no-codesign
-
-      - name: Build with Xcode directly
+      - name: Build iOS app directly with xcodebuild
         run: |
           cd ios
-          pod install
           xcodebuild -workspace Runner.xcworkspace \
                      -scheme Runner \
                      -configuration Release \
                      -sdk iphoneos \
+                     -derivedDataPath build \
                      CODE_SIGNING_ALLOWED=NO \
                      CODE_SIGNING_REQUIRED=NO \
                      clean build
@@ -48,7 +36,7 @@ jobs:
       - name: Package app as IPA
         run: |
           mkdir -p Payload
-          cp -r ios/build/Release-iphoneos/Runner.app Payload/
+          cp -r ios/build/Build/Products/Release-iphoneos/Runner.app Payload/
           zip -r keyboard.ipa Payload
 
       - name: Upload unsigned IPA artifact
