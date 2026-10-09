@@ -18,8 +18,23 @@ jobs:
       - name: Check out source
         uses: actions/checkout@v4
 
-      - name: Select Xcode Version
-        run: sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
+      - name: Set up Flutter
+        uses: subosito/flutter-action@v2
+        with:
+          channel: 'stable'
+          cache: true
+
+      - name: Install Flutter dependencies & Generate Config
+        run: |
+          flutter pub get
+          flutter precache --ios
+
+      - name: Create Dummy Generated.xcconfig if missing
+        run: |
+          mkdir -p ios/Flutter
+          touch ios/Flutter/Generated.xcconfig
+          echo "FLUTTER_ROOT=/Users/runner/hostedtoolcache/flutter" >> ios/Flutter/Generated.xcconfig
+          echo "FLUTTER_BUILD_DIR=build" >> ios/Flutter/Generated.xcconfig
 
       - name: Install CocoaPods dependencies
         run: |
