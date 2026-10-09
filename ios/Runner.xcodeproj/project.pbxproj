@@ -1,0 +1,205 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000001 /* AppDelegate.swift */; };
+		A10000000000000000000002 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000004 /* KeyboardViewController.swift */; };
+		A10000000000000000000003 /* KeyboardExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A20000000000000000000005 /* KeyboardExtension.appex */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A10000000000000000000004 /* Flutter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A20000000000000000000008 /* Flutter.framework */; };
+		A10000000000000000000005 /* GeneratedPluginRegistrant.m in Sources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000B /* GeneratedPluginRegistrant.m */; };
+		A10000000000000000000006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2000000000000000000000F /* Main.storyboard */; };
+		A10000000000000000000007 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A20000000000000000000003 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000000000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A40000000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60000000000000000000002;
+			remoteInfo = KeyboardExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A50000000000000000000001 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (A10000000000000000000003 /* KeyboardExtension.appex in Embed App Extensions */, );
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A20000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20000000000000000000002 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000003 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A20000000000000000000004 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		A20000000000000000000005 /* KeyboardExtension.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = KeyboardExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000006 /* KeyboardExtension-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000000000000000000007 /* KeyboardExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyboardExtension.entitlements; sourceTree = "<group>"; };
+		A20000000000000000000008 /* Flutter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Flutter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000000000000000000009 /* Runner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000000000000000000000A /* Runner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Runner.entitlements; sourceTree = "<group>"; };
+		A2000000000000000000000B /* GeneratedPluginRegistrant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratedPluginRegistrant.m; sourceTree = "<group>"; };
+		A2000000000000000000000C /* Runner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Runner-Bridging-Header.h; sourceTree = "<group>"; };
+		A2000000000000000000000D /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		A2000000000000000000000F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A70000000000000000000001 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000004 /* Flutter.framework in Frameworks */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A70000000000000000000002 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A80000000000000000000001 = {
+			isa = PBXGroup;
+			children = (A80000000000000000000002 /* Runner */, A80000000000000000000003 /* KeyboardExtension */, A80000000000000000000004 /* Frameworks */, A80000000000000000000005 /* Products */, A80000000000000000000006 /* Flutter */, );
+			sourceTree = "<group>";
+		};
+		A80000000000000000000002 /* Runner */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000001 /* AppDelegate.swift */, A20000000000000000000002 /* Info.plist */, A20000000000000000000003 /* LaunchScreen.storyboard */, A2000000000000000000000A /* Runner.entitlements */, A2000000000000000000000B /* GeneratedPluginRegistrant.m */, A2000000000000000000000C /* Runner-Bridging-Header.h */, A2000000000000000000000F /* Main.storyboard */, );
+			path = Runner;
+			sourceTree = "<group>";
+		};
+		A80000000000000000000003 /* KeyboardExtension */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000004 /* KeyboardViewController.swift */, A20000000000000000000006 /* KeyboardExtension-Info.plist */, A20000000000000000000007 /* KeyboardExtension.entitlements */, );
+			path = KeyboardExtension;
+			sourceTree = "<group>";
+		};
+		A80000000000000000000004 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000008 /* Flutter.framework */, );
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A80000000000000000000005 /* Products */ = {
+			isa = PBXGroup;
+			children = (A20000000000000000000009 /* Runner.app */, A20000000000000000000005 /* KeyboardExtension.appex */, );
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A80000000000000000000006 /* Flutter */ = {
+			isa = PBXGroup;
+			children = (A2000000000000000000000D /* Debug.xcconfig */, A2000000000000000000000E /* Release.xcconfig */, );
+			path = Flutter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000000000000000000001 /* Runner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000001 /* Build configuration list for PBXNativeTarget "Runner" */;
+			buildPhases = (A90000000000000000000001 /* Flutter Build */, A70000000000000000000001 /* Frameworks */, A90000000000000000000002 /* Sources */, A90000000000000000000003 /* Resources */, A50000000000000000000001 /* Embed App Extensions */, A90000000000000000000004 /* Flutter Embed and Thin */, );
+			buildRules = ();
+			dependencies = (A30000000000000000000002 /* PBXTargetDependency */, );
+			name = Runner;
+			productName = Runner;
+			productReference = A20000000000000000000009 /* Runner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60000000000000000000002 /* KeyboardExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000002 /* Build configuration list for PBXNativeTarget "KeyboardExtension" */;
+			buildPhases = (A70000000000000000000002 /* Frameworks */, A90000000000000000000005 /* Keyboard Sources */, A90000000000000000000006 /* Keyboard Resources */, );
+			buildRules = ();
+			dependencies = ();
+			name = KeyboardExtension;
+			productName = KeyboardExtension;
+			productReference = A20000000000000000000005 /* KeyboardExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A40000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {BuildIndependentTargetsInParallel = YES; LastUpgradeCheck = 1600; TargetAttributes = {A60000000000000000000001 = {CreatedOnToolsVersion = 15.0; }; A60000000000000000000002 = {CreatedOnToolsVersion = 15.0; }; }; };
+			buildConfigurationList = AA0000000000000000000003 /* Build configuration list for PBXProject "Runner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (en, Base, );
+			mainGroup = A80000000000000000000001;
+			productRefGroup = A80000000000000000000005 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A60000000000000000000001 /* Runner */, A60000000000000000000002 /* KeyboardExtension */, );
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90000000000000000000003 /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000006 /* Main.storyboard in Resources */, A10000000000000000000007 /* LaunchScreen.storyboard in Resources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A90000000000000000000006 /* Keyboard Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A90000000000000000000001 /* Flutter Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			inputPaths = ("$(FLUTTER_ROOT)/packages/flutter_tools/bin/xcode_backend.sh", "$(FLUTTER_ROOT)/packages/flutter_tools/bin/xcode_backend.dart", );
+			name = "Flutter Build";
+			outputPaths = ("$(TARGET_BUILD_DIR)/$(INFOPLIST_PATH)", );
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" build";
+		};
+		A90000000000000000000004 /* Flutter Embed and Thin */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = ();
+			inputPaths = ();
+			name = "Flutter Embed and Thin";
+			outputPaths = ();
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$FLUTTER_ROOT/packages/flutter_tools/bin/xcode_backend.sh\" embed_and_thin";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90000000000000000000002 /* Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000001 /* AppDelegate.swift in Sources */, A10000000000000000000005 /* GeneratedPluginRegistrant.m in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+		A90000000000000000000005 /* Keyboard Sources */ = {isa = PBXSourcesBuildPhase; buildActionMask = 2147483647; files = (A10000000000000000000002 /* KeyboardViewController.swift in Sources */, ); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A30000000000000000000002 /* PBXTargetDependency */ = {isa = PBXTargetDependency; target = A60000000000000000000002 /* KeyboardExtension */; targetProxy = A30000000000000000000001 /* PBXContainerItemProxy */; };
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB0000000000000000000001 /* Debug Project */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 13.0; SDKROOT = iphoneos; }; name = Debug; };
+		AB0000000000000000000002 /* Release Project */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 13.0; SDKROOT = iphoneos; }; name = Release; };
+		AB0000000000000000000003 /* Profile Project */ = {isa = XCBuildConfiguration; buildSettings = {ALWAYS_SEARCH_USER_PATHS = NO; CLANG_ENABLE_MODULES = YES; IPHONEOS_DEPLOYMENT_TARGET = 13.0; SDKROOT = iphoneos; }; name = Profile; };
+		AB0000000000000000000004 /* Debug Runner */ = {isa = XCBuildConfiguration; baseConfigurationReference = A2000000000000000000000D /* Debug.xcconfig */; buildSettings = {CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements; CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)"; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Runner/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; VERSIONING_SYSTEM = "apple-generic"; }; name = Debug; };
+		AB0000000000000000000005 /* Release Runner */ = {isa = XCBuildConfiguration; baseConfigurationReference = A2000000000000000000000E /* Release.xcconfig */; buildSettings = {CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements; CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)"; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Runner/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; VERSIONING_SYSTEM = "apple-generic"; }; name = Release; };
+		AB0000000000000000000006 /* Profile Runner */ = {isa = XCBuildConfiguration; baseConfigurationReference = A2000000000000000000000E /* Release.xcconfig */; buildSettings = {CODE_SIGN_ENTITLEMENTS = Runner/Runner.entitlements; CURRENT_PROJECT_VERSION = "$(FLUTTER_BUILD_NUMBER)"; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = Runner/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard; PRODUCT_NAME = "$(TARGET_NAME)"; SWIFT_VERSION = 5.0; VERSIONING_SYSTEM = "apple-generic"; }; name = Profile; };
+		AB0000000000000000000007 /* Debug KeyboardExtension */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = KeyboardExtension/KeyboardExtension.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KeyboardExtension/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard.KeyboardExtension; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; }; name = Debug; };
+		AB0000000000000000000008 /* Release KeyboardExtension */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = KeyboardExtension/KeyboardExtension.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KeyboardExtension/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard.KeyboardExtension; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; }; name = Release; };
+		AB0000000000000000000009 /* Profile KeyboardExtension */ = {isa = XCBuildConfiguration; buildSettings = {APPLICATION_EXTENSION_API_ONLY = YES; CODE_SIGN_ENTITLEMENTS = KeyboardExtension/KeyboardExtension.entitlements; CURRENT_PROJECT_VERSION = 1; GENERATE_INFOPLIST_FILE = NO; INFOPLIST_FILE = KeyboardExtension/Info.plist; IPHONEOS_DEPLOYMENT_TARGET = 13.0; PRODUCT_BUNDLE_IDENTIFIER = com.example.kaomojikeyboard.KeyboardExtension; PRODUCT_NAME = "$(TARGET_NAME)"; SKIP_INSTALL = YES; SWIFT_VERSION = 5.0; }; name = Profile; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA0000000000000000000001 /* Build configuration list for PBXNativeTarget "Runner" */ = {isa = XCConfigurationList; buildConfigurations = (AB0000000000000000000004 /* Debug Runner */, AB0000000000000000000005 /* Release Runner */, AB0000000000000000000006 /* Profile Runner */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AA0000000000000000000002 /* Build configuration list for PBXNativeTarget "KeyboardExtension" */ = {isa = XCConfigurationList; buildConfigurations = (AB0000000000000000000007 /* Debug KeyboardExtension */, AB0000000000000000000008 /* Release KeyboardExtension */, AB0000000000000000000009 /* Profile KeyboardExtension */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		AA0000000000000000000003 /* Build configuration list for PBXProject "Runner" */ = {isa = XCConfigurationList; buildConfigurations = (AB0000000000000000000001 /* Debug Project */, AB0000000000000000000002 /* Release Project */, AB0000000000000000000003 /* Profile Project */, ); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+/* End XCVersionGroup section */
+
+	};
+	rootObject = A40000000000000000000001 /* Project object */;
+}
